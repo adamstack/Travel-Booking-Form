@@ -1,0 +1,269 @@
+<!doctype html>
+<html xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<title>E-Travel</title>
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<!--JS-->
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  		<script>
+			$(document).ready(function() {
+			$(".datepicker").datepicker();
+			});
+  		</script>
+		<!--Basic SEO-->
+		<meta name="keywords" content="travel, flight, tickets, booking">
+		<meta name="description" content="This page allows you to reserve your tickets.">
+		<meta name="author" content="Dan Atanasov">
+	</head>
+	<body>
+		<div id="site-wrapper">
+			<!--Header-->
+			<header>
+				<div id="logo"></div>
+				<ul id="login-bar">
+					<li><a href="#">Already a member?</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Register</a></li>
+				</ul>
+				<form role="search" method="get" id="searchform">
+					<input type="text" id="searchtext" placeholder="type here..."/>
+					<input type="submit" id="searchsubmit" class="button" value="Go Search" />
+				</form>
+			</header>
+			<!--Navigation-->
+			<nav>
+				<ul>
+					<li class="current"><a href="#">Home</a></li>
+					<li><a href="#">Flights</a></li>
+					<li><a href="#">Holidays</a></li>
+					<li><a href="#">Railways E-Ticketing</a></li>
+				</ul>
+			</nav>
+			<!--Content-->
+			<div id="content">
+			<div class="content-column">
+				<div class="booking-box">
+					<div class="box-title">BOOK YOUR <span class="red-text">FLIGHT</span></div>
+					<form>
+						<table>
+							<tr>
+								<td><input type="radio" name="destination">Domestic</input></td>
+								<td><input type="radio" name="destination">International</input></td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="return">Round Trip</input></td>
+								<td><input type="radio" name="return">One Way</input></td>
+							</tr>
+							<tr>
+								<td><p class="bold">From</p>
+									<select>
+										<option>Origin</option>
+										<option>City 1</option>
+										<option>City 2</option>
+										<option>City 3</option>
+									</select>
+								</td>
+								<td><p class="bold">To</p>
+									<select>
+										<option>Destination</option>
+										<option>City 1</option>
+										<option>City 2</option>
+										<option>City 3</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="bold">Departure</p>
+									<input class="datepicker" placeholder="dd-mm-yyyy" id="date1" />
+									<label for="date1"><div class="calendar"></div></label>
+								</td>
+								<td>
+									<p class="bold">Return</p>
+									<input class="datepicker" placeholder="dd-mm-yyyy" id="date2" />
+									<label for="date2"><div class="calendar"></div></label>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"><hr></td>
+							</tr>
+							<tr>
+								<td><p class="bold">Adults</p>
+									<p>(12+ yrs)</p>
+									<select>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</td>
+								<td><p class="bold">Childred</p>
+									<p>(11- yrs)</p>
+									<select>
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"><hr></td>
+							</tr>
+							<tr>
+								<td class="section-title">Advanced Options</td>
+							</tr>
+							<tr>
+								<td><p>Preferred Airline</p>
+									<select>
+										<option>All airlines</option>
+										<option>Airline 1</option>
+										<option>Airline 2</option>
+										<option>Airline 3</option>
+									</select>
+								</td>
+								<td><p>Class</p>
+									<select>
+										<option>Business</option>
+										<option>Economy</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"><hr></td>
+							</tr>
+						</table>
+						<input type="submit" class="button" value="FIND FLIGHTS" />
+					</form>
+				</div>
+				<div class="info-box">
+					<div class="box-title">CONTACT <span class="red-text">US</span></div>
+					<table>
+						<tr>
+							<td class="blue-text bold">Call US</td>
+							<td>1000-1000-100 <span class="blue-text">or</span> 000-987654321</td>
+						</tr>
+						<tr>
+							<td class="blue-text bold">SMS</td>
+							<td>022-987654321</td>
+						</tr>
+						<tr>
+							<td class="blue-text bold">Mail Us</td>
+							<td>support@airport.com</td>
+						</tr>
+					</table>
+				</div>
+			</div><!--Column 1 end-->
+			<div class="content-column">
+				<div class="booking-box">
+					<div class="box-title">BOOK YOUR <span class="red-text">RAIL TICKET</span></div>
+					<form>
+						<table>
+							<tr>
+								<td><p class="bold">From</p>
+									<select>
+										<option>Origin</option>
+										<option>City 1</option>
+										<option>City 2</option>
+										<option>City 3</option>
+									</select>
+								</td>
+								<td><p class="bold">To</p>
+									<select>
+										<option>Destination</option>
+										<option>City 1</option>
+										<option>City 2</option>
+										<option>City 3</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="bold">Departure</p>
+									<input class="datepicker" placeholder="dd-mm-yyyy" id="date1" />
+									<label for="date1"><div class="calendar"></div></label>
+								</td>
+								<td>
+									<p class="bold">Return</p>
+									<input class="datepicker" placeholder="dd-mm-yyyy" id="date2" />
+									<label for="date2"><div class="calendar"></div></label>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"><hr></td>
+							</tr>
+							<tr>
+								<td><p class="bold">Adults</p>
+									<p>(12+ yrs)</p>
+									<select>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</td>
+								<td><p class="bold">Childred</p>
+									<p>(11- yrs)</p>
+									<select>
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"><hr></td>
+							</tr>
+						</table>
+						<input type="submit" class="button" value="FIND TRAINS" />
+					</form>
+				</div>
+				<div class="info-box">
+					<div class="box-title">BOOK YOUR <span class="red-text">TRAVEL INSURANCE</span></div>
+					<table>
+						<p class="insurance-list"><a href="#">Travel Care</a> - Travel protection-three of coverage.</p>
+						<p class="insurance-list"><a href="#"><span class="blue-text">imageScholar</span></a> - Protection for students aboard.</p>
+						<p class="insurance-list"><a href="#"><span class="blue-text">imageFamily Care</span></a> - Protection for families traveling aboard.</p>
+					</table>
+				</div>
+				<div class="info-box">
+					<div class="box-title">BOOK YOUR <span class="red-text">HOLIDAY</span></div>
+						<a href="#"><p>Rail Tour Packages from IRCTC</p></a>
+						<a href="#"><p>Click here for Special NRI Packages</p></a>
+						<a href="#"><p>Click here for Special ARB Packages GRD Packages</p></a>
+				</div>
+			</div><!--Column 2 end-->
+			<div class="content-column clear">
+				<div id="image-strip">
+					<img src="images/image1.png" alt="picture" title="Pls choose me terelik!"/>
+					<img src="images/image2.png" alt="picture" title="Pls choose me terelik!"/>
+					<img src="images/image3.png" alt="picture" title="Pls choose me terelik!"/>
+				</div>
+				<div class="info-box last-box">
+					<div class="box-title">THE AIRLINE <span class="red-text">LOST YOUR BAG</span></div>
+					<img src="images/image4.png" alt="picture" title="Pls choose me terelik!"/>
+					<p>The 5 Don’ts You Must Know to Get it</p>
+					<input type="submit" class="button" value="READ MORE" />
+				</div>
+			</div><!--Column 3 end-->
+			</div><!--Content 3 end-->
+			<hr>
+			<footer>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Holidays</a></li>
+					<li><a href="#">Hotels</a></li>
+					<li><a href="#">Railway e-ticketing</a></li>
+					<li><a href="#">Insurance</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+				<span id="copyright">Copyright © 2000-2015 <a href="#">www.airport.com</a> All rights reserved.</span>
+			</footer>
+		</div><!--Wrapper end-->
+	</body>
+</html>
